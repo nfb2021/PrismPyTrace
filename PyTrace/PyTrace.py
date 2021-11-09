@@ -274,7 +274,7 @@ class PrismDistribution(Prism):
         iterations = 0
         while current_n_prisms <= self.n_prisms - 1:
             iterations += 1
-            print(iterations, current_n_prisms)
+            # print(iterations, current_n_prisms)
             coords = rn.uniform(min_x, max_x), rn.uniform(min_y, max_y) # proposal for next prisms's coordinates
             try_prism = self.prism_whole(coords)
             overlap = try_prism.intersection(super_prism)   # contains if prisms and MultiPolygon do or do not overlap
@@ -353,7 +353,7 @@ class PrismDistribution(Prism):
         x_offset = (maxx - minx) * 0.2
         y_offset = (maxy - miny) * 0.2
         steps = int((maxx - minx + x_offset) / stepsize)
-        print(steps)
+        # print(steps)
         scan_steps, avg_refr_idx = [], []
         thrown_away = 0
         for s in trange(steps):
@@ -440,7 +440,7 @@ class PrismDistribution(Prism):
         x_offset = (maxx - minx) * 0.2
         y_offset = (maxy - miny) * 0.2
         steps = int((maxy - miny + y_offset) / stepsize)
-        print(steps)
+        # print(steps)
         scan_steps, avg_refr_idx = [], []
         thrown_away = 0
         for s in trange(steps):
