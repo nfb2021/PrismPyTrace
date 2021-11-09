@@ -259,8 +259,8 @@ class PrismDistribution(Prism):
 
         else: 
             prism_forest = list(np.copy(patches_list))
-            for patch in patches_list:            # uncommenting those two lines will plot the patches
-                plt.plot(*patch.exterior.xy, color = "gold")
+            # for patch in patches_list:            # uncommenting those two lines will plot the patches
+            #     plt.plot(*patch.exterior.xy, color = "gold")
             current_n_prisms = 0
 
 
@@ -296,7 +296,7 @@ class PrismDistribution(Prism):
                 break
             
         if blender_export == True:
-            self.export_to_blender(coords_list, "Forest", prism_height = 10)
+            self.export_to_blender(coords_list, "Forest", prism_height = 100)
 
         if patches_list == None:
             return prism_forest
