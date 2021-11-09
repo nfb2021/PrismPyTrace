@@ -8,8 +8,8 @@ import os
 from pathlib import Path
 from tqdm import trange
 from shapely.geometry import LineString, Polygon, MultiLineString, MultiPolygon
-from wktplot.wkt_plot import WKTPlot
-from bokeh.plotting import figure   #, output_file, save, show
+# from wktplot.wkt_plot import WKTPlot
+# from bokeh.plotting import figure   #, output_file, save, show
 import random as rn 
 from scipy.signal import savgol_filter
 from scipy.optimize import curve_fit
