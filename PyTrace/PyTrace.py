@@ -274,7 +274,7 @@ class PrismDistribution(Prism):
         iterations = 0
         while current_n_prisms <= self.n_prisms - 1:
             iterations += 1
-            # print(iterations, current_n_prisms)
+            print(f"iteration\t{iterations}, prism no.\t{current_n_prisms}", end = "\r")
             coords = rn.uniform(min_x, max_x), rn.uniform(min_y, max_y) # proposal for next prisms's coordinates
             try_prism = self.prism_whole(coords)
             overlap = try_prism.intersection(super_prism)   # contains if prisms and MultiPolygon do or do not overlap
@@ -316,7 +316,7 @@ class PrismDistribution(Prism):
         patchx, patchy = nanoscribe_patch_size
 
         if patchx >= self.forest_length and patchy >= self.forest_width: # in this case a single patch is larger than the whole forest anyways
-            print(f"\nThe chosen patch size of {patchx}x{patchy}um is smaller than/equals the desired forest itself, which is {self.forest_length}x{self.forest_width}um.")
+            print(f"\nThe chosen patch size of {patchx}x{patchy}um is larger than/equals the desired forest itself, which is {self.forest_length}x{self.forest_width}um.")
             print("Thus, the forest will not contain patches.\n")
             return self.get_random_forest(seed = seed, threshold = threshold, patches_list = None, blender_export = blender_export)
         
