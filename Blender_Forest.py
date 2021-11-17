@@ -1,5 +1,5 @@
 # >>> This file contains the code for the prism forest to be implemented in Blender <<<
-# >>> In order for this to function, you need the library 'pyblend_prism.py'. You can get this file from '...' <<<
+# >>> In order for this to function, you need the library 'pyblend_prism.py'. You can get this file from 'https://github.com/nfb2021/PrismPyTrace/tree/main/PyBlend' <<<
 # >>> Then,  copy the file to 'C:\Program Files\Blender Foundation\Blender x.x\x.x\scripts\modules\pyblend_prism.py' <<<
 # >>> Once this is done, open Blender and click on 'General' to open a new work space <<<
 # >>> Click on one of the two smaller windows on the right size of the blender main window (Should contain 'scene collection' and 'cube') <<<

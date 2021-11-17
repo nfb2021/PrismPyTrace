@@ -139,7 +139,7 @@ class PrismDistribution(Prism):
         with open("Blender_Forest.py", "w") as f:
             f.write(r"# >>> This file contains the code for the prism forest to be implemented in Blender <<<")
             f.write("\n")
-            f.write(r"# >>> In order for this to function, you need the library 'pyblend_prism.py'. You can get this file from https://github.com/nfb2021/PrismPyTrace <<<")
+            f.write(r"# >>> In order for this to function, you need the library 'pyblend_prism.py'. You can get this file from https://github.com/nfb2021/PrismPyTrace/tree/main/PyBlend <<<")
             f.write("\n")
             f.write(r"# >>> Then,  copy the file to 'C:\Program Files\Blender Foundation\Blender x.x\x.x\scripts\modules\pyblend_prism.py' <<<")
             f.write("\n")
