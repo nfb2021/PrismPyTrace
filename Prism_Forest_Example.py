@@ -89,6 +89,7 @@ def main():
 
     ax.tick_params(axis='y', colors='grey')
     ax2.tick_params(axis='y', colors='blue')
+    plt.axes().set_aspect('equal')
     plt.legend(fontsize = fontsize_legend)
 
    

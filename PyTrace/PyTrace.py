@@ -270,7 +270,7 @@ class PrismDistribution(Prism):
         iterations = 0
         while current_n_prisms <= self.n_prisms - 1:
             iterations += 1
-            print(f"iteration\t{iterations}, prism no.\t{current_n_prisms}", end = "\r")
+            print(f" iteration {iterations:04d}, prism no.{current_n_prisms}", end = "\r")
             coords = rn.uniform(min_x, max_x), rn.uniform(min_y, max_y) # proposal for next prisms's coordinates
             try_prism = self.prism_whole(coords)
             overlap = try_prism.intersection(super_prism)   # contains if prisms and MultiPolygon do or do not overlap
