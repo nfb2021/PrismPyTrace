@@ -37,8 +37,7 @@ separation = width * 0.0
 n_prisms = 100
 prism_start = (0, 0)
 forest_length, forest_width = 200, 200
-# b = 1
-# theta_inc = 0.4        # for 100 prisms, b = 15 & theta_inc = -0.4 deg nearly the greates angle possible for this geometry
+
 theta_inc_list = list(np.arange(-0.2, 0.2, step = 0.1))
 b_list = list(np.arange(1, 15, (15-1)/len(theta_inc_list)))
 

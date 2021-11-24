@@ -13,7 +13,7 @@ from pyblend_prism import Prism
 import os
 prism = Prism(20, 100, 60) # initialize class with some standard values
 prism.clear_scene()
-with open(r'C:\Users\badernic\Documents\Ray_Tracing_Pulse_Compressor\PrismPyTrace\1636465631.6468964_Forest.txt', 'r') as f:
+with open(r'PATH to Prism_Forest_Example.txt', 'r') as f:
 	lines = f.readlines()
 	for l, line in enumerate(lines):
 		if l == 0:
